@@ -24,6 +24,6 @@ lib$(BLAS).so: custom_sgemm.o
 	$(FC) -c $(FFLAGS) -o $@ $<
 
 clean:
-	-rm -f *.o *.mod lib*.so*
+	rm -f *.o *.mod lib*.so*
 
 .PHONY: default clean

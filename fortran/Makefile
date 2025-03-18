@@ -7,7 +7,7 @@ default: program-static program-shared lib
 
 
 program-static: program.o
-	$(FC) -static $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l$(BLAS)
+	-$(FC) -static $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l$(BLAS)
 
 program-shared: program.o
 	$(FC) $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l$(BLAS)
@@ -23,7 +23,7 @@ lib: program-shared
 	$(FC) -c $(FFLAGS) -o $@ $<
 
 clean:
-	-rm -f *.o *.mod program-static program-shared
+	rm -f *.o *.mod program-static program-shared
 	$(MAKE) -C lib clean
 
 .PHONY: default lib clean
