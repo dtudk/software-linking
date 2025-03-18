@@ -1,21 +1,18 @@
 [project]
 name = "playground"
-# Any SPDX qualifier!
-# (System/Software Package Data Exchange)
-license = {text = "GPL-3.0-or-later"}
 
 # We can add any dependencies here
 # Dependencies are installed *together* with this
 # package. So these are so-called *hard-coded* dependencies.
 dependencies = []
 
-
-# Decide which Python versions we support
-requires-python = ">= 3.9"
-
+# Any SPDX qualifier!
+# (System/Software Package Data Exchange)
+license = {text = "GPL-3.0-or-later"}
 
 # Specify the version that the package information contains
 version = "0.1.0"
+
 
 # These details can be customized at will
 # They don't influence the resulting binary, other
