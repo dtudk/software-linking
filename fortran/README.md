@@ -13,7 +13,7 @@ Some examples of compiled codes are:
 
 Any user of these *compiled* programs must first install a compiler for said
 language. This compiler is in charge of converting the code semantics to
-machine-readable semantics.
+machine-readable instructions.
 
 
 ## Dynamic or Static?
