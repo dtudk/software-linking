@@ -25,11 +25,11 @@ time, and they are generally using *dynamic* linking (also known as shared linki
 The difference between static and dynamic linking can be explained with an analogy of how
 person A shares a document to person B.
 
-Static
-: Person A will send the document to person B (e.g. as an attachment in emails)
+- Static  
+  Person A will send the document to person B (e.g. as an attachment in emails)
 
-Dynamic
-: Person A will send a link to the document to person B (e.g. person B does not *have* the
+- Dynamic  
+  Person A will send a link to the document to person B (e.g. person B does not *have* the
   document).
   In code-terms, we call this *shared* linking.
 
@@ -86,7 +86,7 @@ flowchart LR
 ```
 
 
-## Compiling the programs here
+## Compiling the programs
 
 The program here is very simple.
 It calls a BLAS function called `sgemm` (single precision matrix multiplication).
@@ -94,10 +94,10 @@ By executing:
 ```shell
 make
 ```
-you will find 2 programs in the same directory:
+this will compile 1 or 2 programs in the same directory:
 ```
-program-static
-program-shared
+program-static  # maybe, depends on available libraries
+program-shared  # should always be compiled
 ```
 The `program-static` program resolves the BLAS call at compile time, and thus the method is
 statically linked in the program (read: distributed with the executable).  

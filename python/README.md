@@ -19,15 +19,15 @@ machine-readable semantics.
 
 ## Dynamic or Static?
 
-For scripting languages there is no such thing as *dynamic* or *static*.
+For scripting languages there is (generally) no such thing as *dynamic* or *static*.
 
 One will *reference* external libraries (other scripts) by `import` statements (language
 dependent).
 
-The only way to do a *static* linking would be to *copy* in the source code of the
+The only way to do a *static* linking would be to *copy in* the source code of the
 library and thereby make use of it. This is *very* uncommon for libraries, and you'll
 only see copies of codes which are code-snippets (small self-contained code segments) from
-e.g. Stack Exchange.
+e.g. Stack Exchange (hopefully with proper attribution).
 
 
 ## Running the scripts

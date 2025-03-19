@@ -7,10 +7,10 @@ default: program-static program-shared lib
 
 
 program-static: program.o
-	-$(FC) -static $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l$(BLAS)
+	-$(FC) $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l:lib$(BLAS).a
 
 program-shared: program.o
-	$(FC) $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l$(BLAS)
+	-$(FC) $(FFLAGS) -o $@ $< -L$(BLAS_PATH) -l:lib$(BLAS).so
 
 
 lib: program-shared
