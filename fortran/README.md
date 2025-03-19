@@ -92,7 +92,8 @@ The program here is very simple.
 It calls a BLAS function called `sgemm` (single precision matrix multiplication).
 By executing:
 ```shell
-make
+module load gcc/13.2.0-binutils-2.41 openblas/0.3.27
+make FC=gfortran BLAS_PATH=$MODULE_OPENBLAS_LIB_DIR
 ```
 this will compile 1 or 2 programs in the same directory:
 ```
@@ -132,6 +133,9 @@ $> LD_LIBRARY_PATH=./lib ./program-shared
  Calling sgemm from my library!
  Done
 ```
+
+The dynamic linking of external libraries provides greater flexibility, as long as the
+API is the same.
 
 
 ## Questions
