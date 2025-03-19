@@ -113,13 +113,13 @@ end user does not have any control of its internal function calls; all is determ
 
 The static one is simple:
 ```shell
-$> ./program-static
+./program-static
 ```
 you will not see any output (on purpose).
 
 The second case lets the user have control of what BLAS library it should use:
 ```shell
-$> ./program-shared
+./program-shared
  Running simple program calling BLAS sgemm
  Done
 ```
@@ -128,7 +128,7 @@ So, there is a default library (the one linked too at compile time)!
 However, let's *dynamically* replace the call to the BLAS library, we have a custom
 library placed in `lib/`, so we can tell the program to pick that up instead:
 ```shell
-$> LD_LIBRARY_PATH=./lib ./program-shared
+LD_LIBRARY_PATH=./lib ./program-shared
  Running simple program calling BLAS sgemm
  Calling sgemm from my library!
  Done

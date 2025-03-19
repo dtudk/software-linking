@@ -19,14 +19,14 @@ Then we will change a file to ensure that `numpy` is also installed.
 
 First, install the program:
 ```shell
-$> module load python3
-$> python3 -m pip install -e .
+module load python3
+python3 -m pip install -e .
 ```
 
 This will enable Python to *use* the `playground` package.
 Try this:
 ```shell
-$> python
+python
 Python 3.11.7 (main, Feb 13 2024, 19:40:15) [GCC 12.3.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> import playground as pg
@@ -62,7 +62,7 @@ dependencies = [
 ```
 Now, we should install it again (so the dependency gets installed).
 ```shell
-$> python3 -m pip install -e .
+python3 -m pip install -e .
 ```
 Note, that this is *exactly* the same installation command as used
 previously. The dependencies are defined at the *project* level.

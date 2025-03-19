@@ -37,8 +37,8 @@ Here you can run the Python script and use the default `numpy` library.
 Simply do this:
 
 ```shell
-$> module load numpy
-$> python3 run.py
+module load numpy
+python3 run.py
 Running some Python code with numpy
 6
 ```
@@ -46,7 +46,7 @@ Running some Python code with numpy
 If you want to use another `numpy` library, for instance the one shipped
 in the `lib/` folder, then do this:
 ```shell
-$> PYTHONPATH=lib:$PYTHONPATH python3 run.py
+PYTHONPATH=lib:$PYTHONPATH python3 run.py
 This is my custom numpy library code!
 Running some Python code with numpy
 6.0
