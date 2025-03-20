@@ -18,32 +18,11 @@ machine-readable instructions.
 
 ## Dynamic or Static?
 
-A user of a program will compile programs to make them *executable* (run the programs).
-All programs you are using on your computers have likely been compiled at some point in
-time, and they are generally using *dynamic* linking (also known as shared linking).
+By compiling programs with dynamic libraries, it enables one to update the dependencies
+without having to recompile the applications.
+This makes upgrading software much simpler.
 
-The difference between static and dynamic linking can be explained with an analogy of how
-person A shares a document to person B.
-
-- Static  
-  Person A will send the document to person B (e.g. as an attachment in emails)
-
-- Dynamic  
-  Person A will send a link to the document to person B (e.g. person B does not *have* the
-  document).
-  In code-terms, we call this *shared* linking.
-
-The difference in this case is obvious. When sharing a link, person A has the possibility
-of updating the document, without having to resend it to person B. Additionally there
-is no duplication of data. The document only lives *one place*.
-However, if person A accidentally deletes the document, then it will be lost, and the context
-in which the document was used will be lost.  
-With static linking one ensures that person B has complete knowledge at the time
-of receiving the document. This at the cost of having to request a new document if it
-changes, and at the cost of duplicating data.
-
-The same applies to dynamic vs. static linking of programs. Therefore programs are
-frequently (if not always) relying on dynamic linking. Consider for instance your Outlook
+Consider for instance your Outlook
 program. This program relies on some calls to the operating system (to show the graphical
 user interface). These calls to the operating system are *dynamically* resolved when
 needed.
@@ -51,7 +30,7 @@ Hence, if your operating system requires an update (bug fixes, etc.) then
 Outlook will automatically pick up these changes since the calls to the operating
 system happen *dynamically*. If it was linked statically, then any update to the operating
 system, would mean that Outlook would not see the benefit of those updates, because
-it is self-contained with the information.
+it is self-contained with *statically* linked libraries.
 
 
 The flow-chart of these two methods can be shown like this:

@@ -19,6 +19,33 @@ In this repository there are several directories.
   Contains a python source code which is a scripting language. Here there is *per see*
   not any *linking* taking place.
 
+## Dynamic or Static?
+
+All programs you are using on your computer have likely been compiled at some point in
+time, and they are generally using *dynamic*/*shared* linking.
+
+The difference between static and dynamic linking can be explained with an analogy of how
+person **A** shares a document to person **B**.
+
+- Static  
+  Person **A** will send the document to person **B** (e.g. as an attachment in emails)
+
+- Dynamic  
+  Person **A** will send a link to the document to person **B** (e.g. person **B** does not *have* the
+  document). E.g. SharePoint, or Google Docs.
+
+The difference in this case is obvious. When sharing a link, person **A** has the possibility
+of updating the document, without having to resend it to person **B**. Additionally there
+is no duplication of data. The document only lives *one place*.
+However, if person **A** accidentally deletes the document, then it will be lost, and the context
+in which the document was used will be lost.  
+With static linking one ensures that person **B** has complete knowledge at the time
+of receiving the document. This at the cost of having to request a new document if it
+changes, and at the cost of duplicating data.
+
+This analogy is directly transferable to the software eco-system.
+
+
 
 ## Accessing the DTU HPC infrastructure
 
