@@ -115,18 +115,3 @@ LD_LIBRARY_PATH=./lib ./program-shared
 
 The dynamic linking of external libraries provides greater flexibility, as long as the
 API is the same.
-
-
-## Questions
-
-For me as a developer, it seems I can bypass *any* software requirement by saying:
-
-> For use, please link to a library using the API of the *X* library.
-
-But of course, a developer will make it easy for end-users to use their software.
-So the build-infrastructure (`make`) will make *sane* choices. At what part does
-a choice constitute a legal binding between the two libraries?
-
-In this case, I would imagine I can distribute the source code under *any* license,
-even if one of the dependencies is GPL, simply because I did not do a default
-choice for the end user?

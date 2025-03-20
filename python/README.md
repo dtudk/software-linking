@@ -52,26 +52,3 @@ Running some Python code with numpy
 6.0
 ```
 The output of the two are not equivalent, simply because we call two different things!
-
-
-## Questions
-
-For me as a developer, it seems I can bypass *any* software requirement by saying:
-
-> For use, please ensure a library with the same API of the *X* library
-> is present in the `PYTHONPATH` variable.
-
-But of course, a developer will make it easy for end-users to use their software.
-In scripting languages, there is typically only a description of the required
-packages in the installation process, i.e. a user installing the above program
-would also install `numpy` (to make it easy). However, I (as the developer)
-could decide not to let the installation process install `numpy`, and let the
-user do whatever they want, as long as the program has access to a library
-called `numpy` at run-time.
-
-In this case, I would imagine I can distribute the source code under *any* license,
-even if one of the dependencies is GPL, simply because I did not do a default
-choice for the end user?
-
-For Python one only ever distributes the source code of the library it self. It is first
-at installation point that both the library *and* its dependencies co-exist.

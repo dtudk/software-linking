@@ -28,11 +28,11 @@ The difference between static and dynamic linking can be explained with an analo
 person **A** shares a document to person **B**.
 
 - Static  
-  Person **A** will send the document to person **B** (e.g. as an attachment in emails)
+  Person **A** will send the document to person **B** (e.g. as an attachment by email).
 
 - Dynamic  
   Person **A** will send a link to the document to person **B** (e.g. person **B** does not *have* the
-  document). E.g. SharePoint, or Google Docs.
+  document). For example SharePoint or Google Docs.
 
 The difference in this case is obvious. When sharing a link, person **A** has the possibility
 of updating the document, without having to resend it to person **B**. Additionally there
@@ -60,23 +60,14 @@ There, you'll have access to a Linux distribution, and will have access to all t
 software all employees and students have access to.
 
 
-## Interesting quotes from GPL
+## Getting this source repository
 
-> The “Corresponding Source” for a work in object code form means all the source code
-> needed to generate, install, and (for an executable work) run the object code and to
-> modify the work, including scripts to control those activities. However, it does not
-> include the work's System Libraries, or general-purpose tools or generally available
-> free programs which are used unmodified in performing those activities but which are not
-> part of the work. For example, Corresponding Source includes interface definition files
-> associated with source files for the work, and the source code for shared libraries and
-> dynamically linked subprograms that the work is specifically designed to require, such
-> as by intimate data communication or control flow between those subprograms and other
-> parts of the work.
+Open up a terminal and execute the following:
+```shell
+git clone https://github.com/dtudk/software-linking.git
+```
 
-The key sentence (for me) is:
 
-> ... and the source code for shared libraries and dynamically linked subprograms that the
-> work is specifically designed to require ...
+## License
 
-To me, this seems to give me room to say that I don't require a specific subprogram.
-Only one that defines the same API.
+ software-linking © 2025 by Nick Papior, Technical University of Denmark is licensed under CC BY-SA 4.0
